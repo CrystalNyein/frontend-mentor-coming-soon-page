@@ -86,13 +86,19 @@ body {
   border-radius: 2rem;
   border: 1px solid var(--desaturated-red);
   outline: none;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .error input {
   border: 2px solid var(--soft-red);
 }
 .hero-action input::placeholder {
   color: var(--desaturated-red);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
 }
 .hero-action .error-icon {
   position: absolute;
@@ -148,6 +154,9 @@ body {
   html {
     font-size: 13px;
   }
+  body {
+    justify-content: center;
+  }
   .hero-section {
     width: 100vw;
     grid-template-columns: 1fr;
@@ -170,8 +179,8 @@ body {
   }
   .hero-nav,
   .hero-text {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
   }
   .hero-text {
     margin-top: 2rem;
