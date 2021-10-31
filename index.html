@@ -53,13 +53,16 @@
               id="email"
               required
               placeholder="Email Address"
+              value=""
             />
             <img
               class="error-icon"
               src="./images/icon-error.svg"
               alt="Error Icon"
             />
-            <button><img src="./images/icon-arrow.svg" alt="Arrow" /></button>
+            <button onclick="validateEmail(event)">
+              <img src="./images/icon-arrow.svg" alt="Arrow" />
+            </button>
             <p class="error-text">Please provide a valid email</p>
           </div>
 
