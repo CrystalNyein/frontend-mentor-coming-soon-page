@@ -82,6 +82,7 @@ body {
 }
 .hero-action input {
   padding: 1.1rem 1.5rem;
+  font-size: 0.9rem;
   width: calc(100% - 6rem);
   border-radius: 2rem;
   border: 1px solid var(--desaturated-red);
@@ -136,6 +137,15 @@ input:-webkit-autofill:active {
   padding-left: 1.5rem;
   color: var(--soft-red);
   display: none;
+}
+.hero-action .success-text {
+  font-size: 0.8rem;
+  padding-left: 1.5rem;
+  color: hsl(125, 42%, 43%);
+  display: none;
+}
+.success .success-text {
+  display: block;
 }
 .error .error-text {
   display: block;
